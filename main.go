@@ -21,8 +21,6 @@ var db *sql.DB
 
 func init() {
 	var err error
-	//os.Getenv("DATABASE_URL")
-	db, err = sql.Open("postgres", "postgres://nifdzdhm:oDSUqX9ZNMlL-mlkcsuvn2AmjJZKqNDN@john.db.elephantsql.com:5432/nifdzdhm")
 	if err != nil {
 		log.Fatal("connect database error", err)
 	}
